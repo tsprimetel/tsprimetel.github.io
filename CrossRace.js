@@ -75,7 +75,7 @@ function setup() {
 }
 
 function draw() {
-  background(185,0,0);
+  background(13,150,20);
   
   // Agents
   fill(255);
@@ -114,6 +114,7 @@ function draw() {
   
   // Finish line Draw
   fill(255);
+	noStroke();
   
   var fnone = 0;
   while(fnone < height){
