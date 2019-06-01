@@ -42,11 +42,11 @@ let sa;
 function preload() {
   // Images repo
   
-  am = loadImage('am.PNG');
+  am = loadImage('am.png');
   aa = loadImage('aa.PNG');
   ak = loadImage('ak.PNG');
   ccha = loadImage('ccha.PNG');
-  dg = loadImage('dg.PNG');
+  dg = loadImage('dg.png');
   ef = loadImage('ef.PNG');
   fk = loadImage('fk.PNG');
   gcha = loadImage('gcha.PNG');
