@@ -42,23 +42,23 @@ let sa;
 function preload() {
   // Images repo
   
-  am = loadImage('am.png');
-  aa = loadImage('aa.png');
-  ak = loadImage('ak.png');
-  ccha = loadImage('ccha.png');
-  dg = loadImage('dg.png');
-  ef = loadImage('ef.png');
-  fk = loadImage('fk.png');
-  gcha = loadImage('gcha.png');
-  glou = loadImage('glou.png');
-  kt = loadImage('kt.png');
-  kk = loadImage('kk.png');
-  mp = loadImage('mp.png');
-  mk = loadImage('mk.png');
-  ms = loadImage('ms.png');
-  pc = loadImage('pc.png');
-  gchr = loadImage('gchr.png');
-  sa = loadImage('sa.png');
+  am = loadImage('am.PNG');
+  aa = loadImage('aa.PNG');
+  ak = loadImage('ak.PNG');
+  ccha = loadImage('ccha.PNG');
+  dg = loadImage('dg.PNG');
+  ef = loadImage('ef.PNG');
+  fk = loadImage('fk.PNG');
+  gcha = loadImage('gcha.PNG');
+  glou = loadImage('glou.PNG');
+  kt = loadImage('kt.PNG');
+  kk = loadImage('kk.PNG');
+  mp = loadImage('mp.PNG');
+  mk = loadImage('mk.PNG');
+  ms = loadImage('ms.PNG');
+  pc = loadImage('pc.PNG');
+  gchr = loadImage('gchr.PNG');
+  sa = loadImage('sa.PNG');
 
 
 
