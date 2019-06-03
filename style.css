@@ -1,17 +1,16 @@
 
+
 html, body {
   height: 100%;
 }
 
 body {
-	   background-color: #800000;
-	   /* Full height */
-    height: 100%; 
+	    background-color: #FDFEFE;
+	 
 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
- 
+  
 }
+
+
+    
 
