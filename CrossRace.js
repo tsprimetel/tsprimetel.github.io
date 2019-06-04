@@ -263,7 +263,7 @@ var fntwo = height*0.08;
 	
 		
  // Text
- textSize(7);
+ textSize(15);
  textStyle(BOLD);
  fill(219,204,253);
 
