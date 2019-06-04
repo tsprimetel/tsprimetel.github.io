@@ -1,26 +1,32 @@
-var AlexisMitas = 0;
-var AndreasAnastasiou = 0;
-var AndraKyprianou = 0;
-var ChristosCharalampous = 0;
-var DemetrisGeorgiou = 0;
-var EftychiaPhylactide = 0;
-var FoteinyKyriakou = 0;
-var GeorgeCharalampous = 0;
-var GeorgeLazari = 0;
-var GeorgeLouca = 0;
-var KonstantinosTsitzilonis = 0;
-var KonstantinosKosta = 0;
-var MariosParaschou = 0;
-var MichalisKyprianou = 0;
-var MichalisSkoutaris = 0;
-var PaniCharalampous = 0;
-var ParisLoizou = 0;
-var GeorgeChristodoulou = 0;
-var SteliosAngeli = 0;
-var AndreasIoannou = 0;
-var FilipposKarayiannis = 0;
-var GeorgeZafeiropoulos = 0;
+var FilipposKarayiannis = 100;
+var GeorgeZafeiropoulos = 100;
+var MarinosMourouzis = 100;
+var GeorgeChristodoulou = 100;
+var SteliosAngeli = 100;
+var AlexisMitas = 100;
+var AndreasAnastasiou = 100;
+var AndraKyprianou = 100;
+var ChristosCharalampous = 100;
+var DemetrisGeorgiou = 100;
+var EftychiaPhylactide = 100;
+var FoteinyKyriakou = 100;
+var GeorgeCharalampous = 100;
+var GeorgeLazari = 100;
+var GeorgeLouca = 100;
+var KonstantinosTsitzilonis = 100;
+var KonstantinosKosta = 100;
+var MariosParaschou = 100;
+var MichalisKyprianou = 100;
+var MichalisSkoutaris = 100;
+var PaniCharalampous = 100;
+var ParisLoizou = 100;
+var AndreasIoannou = 100;
 
+var fil;
+var zaf;
+var mm;
+var gchr;
+var sa;
 var am;
 var aa;
 var ak;
@@ -37,12 +43,13 @@ var mk;
 var ms;
 var pc;
 var pl;
-var gchr;
-var sa;
 var ai;
-var fil;
-var zaf;
 
+ var filX = 0;
+ var zafX = 0;
+ var mmX = 0;
+ var gchrX = 0;
+ var saX = 0;
  var amX = 0;
  var aaX= 0;
  var akX= 0;
@@ -60,16 +67,15 @@ var zaf;
  var msX = 0;
  var pcX = 0;
  var plX = 0;
- var gchrX = 0;
- var saX = 0;
  var aiX = 0;
- var filX = 0;
- var zafX = 0;
+ 
 
 
 function preload() {
   // Images repo
-  
+  fil = loadImage('fka.PNG');
+  zaf = loadImage('gz.PNG');
+  mm = loadImage('mm.PNG');
   am = loadImage('am.png');
   aa = loadImage('aa.PNG');
   ak = loadImage('ak.PNG');
@@ -89,13 +95,12 @@ function preload() {
   gchr = loadImage('gchr.PNG');
   sa = loadImage('sa.PNG');
   ai = loadImage('ai.PNG');
-  fil = loadImage('fka.PNG');
-  zaf = loadImage('gz.PNG');
+  
 
 
 }
 function setup() {
-  createCanvas(windowWidth,1725);
+  canvas = createCanvas(windowWidth,windowHeight);
   
   
 
@@ -103,230 +108,261 @@ function setup() {
   
 }
 
+
 function draw() {
   background(13,150,20);
   
-  // Agents
   fill(255);
-  
-  
-  image(am,amX,50,50,50);
-  if(amX < AlexisMitas*10){
-	  amX = amX +2;
+  noStroke();
+  var fnone = height*0.08;
+  while(fnone < height){
+  rect(0,fnone,width*0.75,1);
+    fnone = fnone + height*0.04;
   }
-  
-  image(aa,aaX,125,50,50);
-  if(aaX < AndreasAnastasiou*10){
-	  aaX = aaX + 2;
-  }
-  
-  image(ak,akX,200,50,50);
-  if(akX < AndraKyprianou*10){
-	  akX = akX + 2;
-  }
-  
-  image(ccha,cchaX,275,50,50);
-  if(cchaX < ChristosCharalampous*10){
-	  cchaX = cchaX +2;
-  }
-  
-  image(dg,dgX,350,50,50);
-  if(dgX < DemetrisGeorgiou*10){
-	  dgX = dgX +2;
-  }
-  
-  image(ef,efX,425,50,50);
-  if(efX < EftychiaPhylactide*10){
-	  efX = efX +2;
-  }
-  
-  image(fot,fotX,500,50,50);
-  if(fotX < FoteinyKyriakou*10){
-	  fotX = fotX +2;
-  }
-  
-  image(gcha,gchaX,575,50,50);
-  if(gchaX < GeorgeCharalampous*10){
-	  gchaX = gchaX +2;
-  }
-  
-  rect(glaX,650,50,50);
-  if(glaX < GeorgeLazari*10){
-	  glaX = glaX +2;
-  }
-  
-  image(glou,glouX,725,50,50);
-  if(glouX < GeorgeLouca*10){
-	  glouX = glouX +2;
-  }
-  
-  image(kt,ktX,800,50,50);
-  if (ktX < KonstantinosTsitzilonis*10){
-	  ktX = ktX +2;
-  }
-  
-  image(kk,kkX,875,50,50);
-  if (kkX < KonstantinosKosta*10){
-	  kkX = kkX +2;	  
-  }
-  
-  image(mp,mpX,950,50,50);
-  if (mpX < MariosParaschou*10){
-	  mpX = mpX +2;;
-  }
-  
-  image(mk,mkX,1025,50,50);
-   if(mkX < MichalisKyprianou*10){
-	   mkX = mkX +2;
-   }
-  
-  image(ms,msX,1100,50,50);
-   if(msX < MichalisSkoutaris*10){
-	   msX = msX +2;
-   }
-  
-  image(pc,pcX,1175,50,50);
-   if(pcX < PaniCharalampous*10){
-	   pcX = pcX + 2;
-   }
- 
- image(pl,plX,1250,50,50);
-  if(plX < ParisLoizou*10){
-	    plX = plX + 2 }
- 
- 
- image(gchr,gchrX,1325,50,50);
-  if(gchrX < GeorgeChristodoulou*10){
-	    gchrX = gchrX + 2 }
- 
- image(sa,saX,1400,50,50);
-  if(saX < SteliosAngeli*10){
-	    saX = saX + 2 }
-		
- image(ai,aiX,1475,50,50);
-  if(aiX < AndreasIoannou*10){
-	    aiX = aiX + 2 }
-		
- image(fil,filX,1550,50,50);
-  if(filX < FilipposKarayiannis*10){
-	    filX = filX + 2 }
-		
-image(zaf,zafX,1625,50,50);
-  if(zafX < GeorgeZafeiropoulos*10){
-	    zafX = zafX + 2 }		
-	
-		
- // Text
- textSize(25);
- textStyle(BOLD);
- fill(219,204,253);
-
- text("Cross Sales", 1100, 30);
- fill(0);
- text(AlexisMitas, 1100,90);
- text("Alexis Mitas", 1200,90);
- text(AndreasAnastasiou, 1100,165);
- text("Andreas Anastasiou", 1200,165);
- text(AndraKyprianou, 1100,240);
- text("Andria Kyprianou", 1200,240);
- text(ChristosCharalampous, 1100,315);
- text("Christos Charalampous", 1200,315);
- text(DemetrisGeorgiou, 1100,390);
- text("Demetris Georgiou", 1200,390);
- text(EftychiaPhylactide, 1100,465);
-  text("Eftychia Phylactide", 1200,465);
-
- text(FoteinyKyriakou, 1100,540);
- text("Foteini Kyriakou", 1200,540);
-
- text(GeorgeCharalampous, 1100,615);
- text("George Charalampous", 1200,615);
-
- text(GeorgeLazari, 1100,690);
- text("George Lazari", 1200,690);
-
- text(GeorgeLouca, 1100,765);
- text("George Louca", 1200,765);
-
- text(KonstantinosTsitzilonis, 1100,840);
- text("Konstantinos Tsitzilonis", 1200,840);
-
- text(KonstantinosKosta, 1100,915);
- text("Konstantinos Kosta", 1200,915);
-
- text(MariosParaschou, 1100,980);
- text("Marios Paraschou", 1200,980);
-
- text(MichalisKyprianou, 1100,1055);
- text("Michalis Kyprianou", 1200,1055);
-
- text(MichalisSkoutaris, 1100,1130);
- text("Michalis Skoutaris", 1200,1130);
-
- text(PaniCharalampous, 1100,1205);
- text("Pani Charalampous", 1200,1205);
-
- text(ParisLoizou, 1100,1280);
- text("Paris Loizou", 1200,1280);
-
- text(GeorgeChristodoulou, 1100,1355);
- text("George Christodoulou", 1200,1355);
-
- text(SteliosAngeli, 1100,1430);
- text("Stelios Angeli", 1200,1430);
-
- text(AndreasIoannou, 1100,1505);
- text("Andreas Ioannou", 1200,1505);
-
- text(FilipposKarayiannis, 1100,1580);
- text("Filippos Karayiannis", 1200,1580);
-
- text(GeorgeZafeiropoulos, 1100,1655);
- text("George Zafeiropoulos", 1200,1655);
-
-  
-  
-  // Lanes
-  var lanes = 50;
-  while(lanes < height){
-	  rect(-10, width,1,1);
-	  lanes = lanes +50;
-  }
-  
-  
-  
-  
-  
   
   // Finish line Draw
   fill(255);
   noStroke();
-  var fnone = 50;
+  var fnone = height*0.08;
   while(fnone < height){
-  rect(1000,fnone,25,25);
-    fnone = fnone + 50;
+  rect(width*0.75,fnone,width*0.01,height*0.02);
+    fnone = fnone + height*0.04;
   }
   
-  var fntwo = 75;
+var fntwo = height*0.10;
   while(fntwo < height){
-  rect(1025,fntwo,25,25);
-    fntwo = fntwo + 50;
+  rect(width*0.76,fntwo,width*0.01,height*0.02);
+    fntwo = fntwo + height*0.04;
   }
   fill(0);
-  var fnBone = 50;
-  while(fnBone < height){
-  rect(1025,fnBone,25,25);
-    fnBone = fnBone + 50;
-  }
-   var fnBtwo = 75;
-  while(fnBtwo < height){
-  rect(1000,fnBtwo,25,25);
-    fnBtwo = fnBtwo + 50;
+  var fnone = height*0.10;
+  while(fnone < height){
+  rect(width*0.75,fnone,width*0.01,height*0.02);
+    fnone = fnone + height*0.04;
   }
   
+var fntwo = height*0.08;
+  while(fntwo < height){
+  rect(width*0.76,fntwo,width*0.01,height*0.02);
+    fntwo = fntwo + height*0.04;
+  }
+  
+  // Agents
+  fill(255);
+  
+  image(fil,filX,height*0.08,width*0.020,height*0.025);
+  if(filX < FilipposKarayiannis*0.01*width*0.75){
+	    filX = filX + 2 }
+		
+  image(zaf,zafX,height*0.12,width*0.020,height*0.025);
+  if(zafX < GeorgeZafeiropoulos*0.01*width*0.75){
+	    zafX = zafX + 2 }
+		
+  image(mm,mmX,height*0.16,width*0.020,height*0.025);
+  if(mmX < MarinosMourouzis*0.01*width*0.75){
+	    mmX = mmX + 2 }
+		
+  image(gchr,gchrX,height*0.20,width*0.020,height*0.025);
+  if(gchrX < GeorgeChristodoulou*0.01*width*0.75){
+	    gchrX = gchrX + 2 }
+ 
+  image(sa,saX,height*0.24,width*0.020,height*0.025);
+  if(saX < SteliosAngeli*0.01*width*0.75){
+	    saX = saX + 2
+  }		
+		
+  image(am,amX,height*0.28,width*0.020,height*0.025);
+  if(amX < AlexisMitas*0.01*width*0.75){
+	  amX = amX +2;
+  }
+  
+  image(aa,aaX,height*0.32,width*0.020,height*0.025);
+  if(aaX < AndreasAnastasiou*0.01*width*0.75){
+	  aaX = aaX + 2;
+  }
+  
+  image(ak,akX,height*0.36,width*0.020,height*0.025);
+  if(akX < AndraKyprianou*0.01*width*0.75){
+	  akX = akX + 2;
+  }
+  
+  image(ccha,cchaX,height*0.40,width*0.020,height*0.025);
+  if(cchaX < ChristosCharalampous*0.01*width*0.75){
+	  cchaX = cchaX +2;
+  }
+  
+  image(dg,dgX,height*0.44,width*0.020,height*0.025);
+  if(dgX < DemetrisGeorgiou*0.01*width*0.75){
+	  dgX = dgX +2;
+  }
+  
+  image(ef,efX,height*0.48,width*0.020,height*0.025);
+  if(efX < EftychiaPhylactide*0.01*width*0.75){
+	  efX = efX +2;
+  }
+  
+  image(fot,fotX,height*0.52,width*0.020,height*0.025);
+  if(fotX < FoteinyKyriakou*0.01*width*0.75){
+	  fotX = fotX +2;
+  }
+  
+  image(gcha,gchaX,height*0.56,width*0.020,height*0.025);
+  if(gchaX < GeorgeCharalampous*0.01*width*0.75){
+	  gchaX = gchaX +2;
+  }
+  
+  rect(glaX,height*0.60,width*0.020,height*0.025);
+  if(glaX < GeorgeLazari*0.01*width*0.75){
+	  glaX = glaX +2;
+  }
+  
+  image(glou,glouX,height*0.64,width*0.020,height*0.025);
+  if(glouX < GeorgeLouca*0.01*width*0.75){
+	  glouX = glouX +2;
+  }
+  
+  image(kt,ktX,height*0.68,width*0.020,height*0.025);
+  if (ktX < KonstantinosTsitzilonis*0.01*width*0.75){
+	  ktX = ktX +2;
+  }
+  
+  image(kk,kkX,height*0.72,width*0.020,height*0.025);
+  if (kkX < KonstantinosKosta*0.01*width*0.75){
+	  kkX = kkX +2;	  
+  }
+  
+  image(mp,mpX,height*0.76,width*0.020,height*0.025);
+  if (mpX < MariosParaschou*0.01*width*0.75){
+	  mpX = mpX +2;;
+  }
+  
+  image(mk,mkX,height*0.80,width*0.020,height*0.025);
+   if(mkX < MichalisKyprianou*0.01*width*0.75){
+	   mkX = mkX +2;
+   }
+  
+  image(ms,msX,height*0.84,width*0.020,height*0.025);
+   if(msX < MichalisSkoutaris*0.01*width*0.75){
+	   msX = msX +2;
+   }
+  
+  image(pc,pcX,height*0.88,width*0.020,height*0.025);
+   if(pcX < PaniCharalampous*0.01*width*0.75){
+	   pcX = pcX + 2;
+   }
+ 
+ image(pl,plX,height*0.92,width*0.020,height*0.025);
+  if(plX < ParisLoizou*0.01*width*0.75){
+	    plX = plX + 2 }
+		
+ image(ai,aiX,height*0.96,width*0.020,height*0.025);
+  if(aiX < AndreasIoannou*0.01*width*0.75){
+	    aiX = aiX + 2 }
+		
+		
+	
+		
+ // Text
+ textSize(7);
+ textStyle(BOLD);
+ fill(219,204,253);
+
+ text("Cross Sales", width*0.825, height*0.04);
+ 
+ fill(0);
+ 
+ text(FilipposKarayiannis, width*0.80,height*0.1);
+ text("Filippos Karayiannis", width*0.85,height*0.1);
+ 
+ text(GeorgeZafeiropoulos, width*0.80,height*0.137);
+ text("George Zafeiropoulos", width*0.85,height*0.137);
+ 
+ text(MarinosMourouzis, width*0.80,height*0.18);
+ text("Marinos Mourouzis", width*0.85,height*0.18);
+ 
+ text(GeorgeChristodoulou, width*0.80,height*0.22);
+ text("George Christodoulou", width*0.85,height*0.22);
+
+ text(SteliosAngeli,  width*0.80,height*0.260);
+ text("Stelios Angeli", width*0.85,height*0.260);
+ 
+ text(AlexisMitas, width*0.80,height*0.300);
+ text("Alexis Mitas", width*0.85,height*0.300);
+ 
+ text(AndreasAnastasiou, width*0.80,height*0.340);
+ text("Andreas Anastasiou", width*0.85,height*0.340);
+ 
+ text(AndraKyprianou, width*0.80,height*0.380);
+ text("Andria Kyprianou", width*0.85,height*0.380);
+ 
+ text(ChristosCharalampous, width*0.80,height*0.420);
+ text("Christos Charalampous", width*0.85,height*0.420);
+ 
+ text(DemetrisGeorgiou, width*0.80,height*0.460);
+ text("Demetris Georgiou", width*0.85,height*0.460);
+ 
+ text(EftychiaPhylactide, width*0.80,height*0.500);
+ text("Eftychia Phylactide", width*0.85,height*0.500);
+
+ text(FoteinyKyriakou, width*0.80,height*0.540);
+ text("Foteini Kyriakou", width*0.85,height*0.540);
+
+ text(GeorgeCharalampous, width*0.80,height*0.580);
+ text("George Charalampous", width*0.85,height*0.580);
+
+ text(GeorgeLazari, width*0.80,height*0.620);
+ text("George Lazari", width*0.85,height*0.620);
+
+ text(GeorgeLouca, width*0.80,height*0.660);
+ text("George Louca", width*0.85,height*0.660);
+
+ text(KonstantinosTsitzilonis, width*0.80,height*0.700);
+ text("Konstantinos Tsitzilonis", width*0.85,height*0.700);
+
+ text(KonstantinosKosta, width*0.80,height*0.740);
+ text("Konstantinos Kosta", width*0.85,height*0.740);
+
+ text(MariosParaschou, width*0.80,height*0.780);
+ text("Marios Paraschou", width*0.85,height*0.780);
+
+ text(MichalisKyprianou, width*0.80,height*0.820);
+ text("Michalis Kyprianou", width*0.85,height*0.820);
+
+ text(MichalisSkoutaris, width*0.80,height*0.860);
+ text("Michalis Skoutaris", width*0.85,height*0.860);
+
+ text(PaniCharalampous, width*0.80,height*0.900);
+ text("Pani Charalampous", width*0.85,height*0.900);
+
+ text(ParisLoizou, width*0.80,height*0.940);
+ text("Paris Loizou", width*0.85,height*0.940);
+
+ text(AndreasIoannou,  width*0.80,height*0.980);
+ text("Andreas Ioannou", width*0.85,height*0.980);
+
+
+
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+}
+function windowResized() {
+ canvas = createCanvas(windowWidth,windowHeight);
+  
+  
+
   
   
 }
