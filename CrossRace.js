@@ -27,7 +27,7 @@ let ak;
 let ccha;
 let dg;
 let ef;
-let fk;
+let fot;
 let gcha;
 let glou;
 let kt;
@@ -49,7 +49,7 @@ let gz;
  var cchaX = 0;
  var dgX = 0;
  var efX = 0;
- var fkX = 0;
+ var fotX = 0;
  var gchaX = 0;
  var glaX = 0;
  var glouX = 0;
@@ -64,7 +64,7 @@ let gz;
  var saX = 0;
  var aiX = 0;
  var filX = 0;
- var gzX = 0;
+ let gzX = 0;
 
 
 function preload() {
@@ -76,7 +76,7 @@ function preload() {
   ccha = loadImage('ccha.PNG');
   dg = loadImage('dg.png');
   ef = loadImage('ef.PNG');
-  fk = loadImage('fk.PNG');
+  fot = loadImage('fk.PNG');
   gcha = loadImage('gcha.PNG');
   glou = loadImage('glou.PNG');
   kt = loadImage('kt.PNG');
@@ -140,9 +140,9 @@ function draw() {
 	  efX = efX +2;
   }
   
-  image(fk,fkX,500,50,50);
-  if(fkX < FoteinyKyriakou*10){
-	  fkX = fkX +2;
+  image(fot,fotX,500,50,50);
+  if(fotX < FoteinyKyriakou*10){
+	  fotX = fotX +2;
   }
   
   image(gcha,gchaX,575,50,50);
