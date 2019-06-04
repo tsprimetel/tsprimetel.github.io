@@ -40,7 +40,7 @@ let pl;
 let gchr;
 let sa;
 let ai;
-let fka;
+let fil;
 let gz;
 
  var amX = 0;
@@ -63,9 +63,8 @@ let gz;
  var gchrX = 0;
  var saX = 0;
  var aiX = 0;
- var fkaX = 0;
- var gzX = 0;
-
+ var filX = 0;
+ let gzX = 0;
 
 
 function preload() {
@@ -90,7 +89,7 @@ function preload() {
   gchr = loadImage('gchr.PNG');
   sa = loadImage('sa.PNG');
   ai = loadImage('ai.PNG');
-  fka = loadImage('fka.PNG');
+  fil = loadImage('fka.PNG');
   gz = loadImage('gz.PNG');
 
 
@@ -208,9 +207,9 @@ function draw() {
   if(aiX < AndreasIoannou*10){
 	    aiX = aiX + 2 }
 		
- image(fka,fkaX,1550,50,50);
-  if(fkaX < FilipposKarayiannis*10){
-	    fkaX = fkaX + 2 }
+ image(fil,filX,1550,50,50);
+  if(filX < FilipposKarayiannis*10){
+	    filX = filX + 2 }
 		
 image(gz,gzX,1625,50,50);
   if(gzX < GeorgeZafeiropoulos*10){
