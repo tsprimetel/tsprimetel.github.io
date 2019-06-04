@@ -1,4 +1,4 @@
-var AlexisMitas = 90;
+var AlexisMitas = 0;
 var AndreasAnastasiou = 4;
 var AndraKyprianou = 5;
 var ChristosCharalampous = 13;
