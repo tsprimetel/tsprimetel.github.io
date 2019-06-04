@@ -237,7 +237,7 @@ image(zaf,zafX,1625,50,50);
   text("Eftychia Phylactide", 1200,465);
 
  text(FoteinyKyriakou, 1100,540);
- text("Foteiny Kyriakou", 1200,540);
+ text("Foteini Kyriakou", 1200,540);
 
  text(GeorgeCharalampous, 1100,615);
  text("George Charalampous", 1200,615);
