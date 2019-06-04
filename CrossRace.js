@@ -27,7 +27,7 @@ let ak;
 let ccha;
 let dg;
 let ef;
-let fk;
+var fk;
 let gcha;
 let glou;
 let kt;
