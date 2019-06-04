@@ -85,7 +85,7 @@ function preload() {
   mk = loadImage('mk.PNG');
   ms = loadImage('ms.PNG');
   pc = loadImage('pc.PNG');
-  pl = loadImage('pl.PNG');
+  pl = loadImage('pl.png');
   gchr = loadImage('gchr.PNG');
   sa = loadImage('sa.PNG');
   ai = loadImage('ai.PNG');
