@@ -1,23 +1,25 @@
-var AlexisMitas = 0;
-var AndreasAnastasiou = 0;
-var AndraKyprianou = 0;
-var ChristosCharalampous = 0;
-var DemetrisGeorgiou = 0;
-var EftychiaPhylactide = 0;
-var FoteinyKyriakou = 0;
+var AlexisMitas = 90;
+var AndreasAnastasiou = 4;
+var AndraKyprianou = 5;
+var ChristosCharalampous = 13;
+var DemetrisGeorgiou = 2;
+var EftychiaPhylactide = 6;
+var FoteinyKyriakou = 5;
 var GeorgeCharalampous = 0;
-var GeorgeLazari = 0;
-var GeorgeLouca = 0;
-var KonstantinosTsitzilonis = 0;
-var KonstantinosKosta = 0;
-var MariosParaschou = 0;
-var MichalisKyprianou = 0;
-var MichalisSkoutaris = 0;
-var PaniCharalampous = 0;
-var ParisLoizou = 0;
-var GeorgeChristodoulou = 0;
-var SteliosAngeli = 0;
-
+var GeorgeLazari = 12;
+var GeorgeLouca = 14;
+var KonstantinosTsitzilonis = 3;
+var KonstantinosKosta = 7;
+var MariosParaschou = 18;
+var MichalisKyprianou = 23;
+var MichalisSkoutaris = 2;
+var PaniCharalampous = 6;
+var ParisLoizou = 18;
+var GeorgeChristodoulou = 73;
+var SteliosAngeli = 50;
+var AndreasIoannou = 0;
+var FilipposKarayiannis = 5;
+var GeorgeZafeiropoulos = 21;
 
 let am;
 let aa;
@@ -34,8 +36,12 @@ let mp;
 let mk;
 let ms;
 let pc;
+let pl;
 let gchr;
 let sa;
+let ai;
+let fka;
+let gz;
 
  var amX = 0;
  var aaX= 0;
@@ -56,7 +62,9 @@ let sa;
  var plX = 0;
  var gchrX = 0;
  var saX = 0;
-
+ var aiX = 0;
+ var fkaX = 0;
+ let gzX = 0;
 
 
 function preload() {
@@ -77,14 +85,17 @@ function preload() {
   mk = loadImage('mk.PNG');
   ms = loadImage('ms.PNG');
   pc = loadImage('pc.PNG');
+  pl = loadImage('pl.PNG');
   gchr = loadImage('gchr.PNG');
   sa = loadImage('sa.PNG');
-
+  ai = loadImage('ai.PNG');
+  fka = loadImage('fka.PNG');
+  gz = loadImage('gz.PNG');
 
 
 }
 function setup() {
-  createCanvas(1150,1500);
+  createCanvas(windowWidth,1725);
   
   
 
@@ -179,7 +190,7 @@ function draw() {
 	   pcX = pcX + 2;
    }
  
- rect(plX,1250,50,50);
+ image(pl,plX,1250,50,50);
   if(plX < ParisLoizou*10){
 	    plX = plX + 2 }
  
@@ -192,35 +203,87 @@ function draw() {
   if(saX < SteliosAngeli*10){
 	    saX = saX + 2 }
 		
+ image(ai,aiX,1475,50,50);
+  if(aiX < AndreasIoannou*10){
+	    aiX = aiX + 2 }
+		
+ image(fka,fkaX,1550,50,50);
+  if(fkaX < FilipposKarayiannis*10){
+	    fkaX = fkaX + 2 }
+		
+image(gz,gzX,1625,50,50);
+  if(gzX < GeorgeZafeiropoulos*10){
+	    gzX = gzX + 2 }		
+	
+		
  // Text
  textSize(25);
  textStyle(BOLD);
  fill(219,204,253);
 
- text("Cross Sales", 1000, 30);
+ text("Cross Sales", 1100, 30);
  fill(0);
  text(AlexisMitas, 1100,90);
+ text("Alexis Mitas", 1200,90);
  text(AndreasAnastasiou, 1100,165);
+ text("Andreas Anastasiou", 1200,165);
  text(AndraKyprianou, 1100,240);
+ text("Andria Kyprianou", 1200,240);
  text(ChristosCharalampous, 1100,315);
+ text("Christos Charalampous", 1200,315);
  text(DemetrisGeorgiou, 1100,390);
+ text("Demetris Georgiou", 1200,390);
  text(EftychiaPhylactide, 1100,465);
+  text("Eftychia Phylactide", 1200,465);
+
  text(FoteinyKyriakou, 1100,540);
+ text("Foteiny Kyriakou", 1200,540);
+
  text(GeorgeCharalampous, 1100,615);
+ text("George Charalampous", 1200,615);
+
  text(GeorgeLazari, 1100,690);
+ text("George Lazari", 1200,690);
+
  text(GeorgeLouca, 1100,765);
+ text("George Louca", 1200,765);
+
  text(KonstantinosTsitzilonis, 1100,840);
+ text("Konstantinos Tsitzilonis", 1200,840);
+
  text(KonstantinosKosta, 1100,915);
+ text("Konstantinos Kosta", 1200,915);
+
  text(MariosParaschou, 1100,980);
+ text("Marios Paraschou", 1200,980);
+
  text(MichalisKyprianou, 1100,1055);
+ text("Michalis Kyprianou", 1200,1055);
+
  text(MichalisSkoutaris, 1100,1130);
+ text("Michalis Skoutaris", 1200,1130);
+
  text(PaniCharalampous, 1100,1205);
+ text("Pani Charalampous", 1200,1205);
+
  text(ParisLoizou, 1100,1280);
+ text("Paris Loizou", 1200,1280);
+
  text(GeorgeChristodoulou, 1100,1355);
+ text("George Christodoulou", 1200,1355);
+
  text(SteliosAngeli, 1100,1430);
+ text("Stelios Angeli", 1200,1430);
 
+ text(AndreasIoannou, 1100,1505);
+ text("Andreas Ioannou", 1200,1505);
 
-  
+ text(FilipposKarayiannis, 1100,1580);
+ text("Filippos Karayiannis", 1200,1580);
+
+ text(GeorgeZafeiropoulos, 1100,1655);
+ text("George Zafeiropoulos", 1200,1655);
+
   
   
   // Lanes
