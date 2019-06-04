@@ -64,7 +64,8 @@ let gz;
  var saX = 0;
  var aiX = 0;
  var fkaX = 0;
- let gzX = 0;
+ var gzX = 0;
+
 
 
 function preload() {
