@@ -1,4 +1,5 @@
 
+
 let imageMariosParaschou,MariosParaschou;
 let imageDimitrisGeorgiou,DimitrisGeorgiou;
 let imageAntreasAnastasiou,AntreasAnastasiou;
@@ -82,7 +83,7 @@ function setup() {
     AndreasChristodoulou = new Agents("Andreas Christodoulou",imageAndreasChristodoulou,0,18);
     EleniSpyrou = new Agents("Eleni Spyrou",imageEleniSpyrou,0,19);
     MariosIordanous = new Agents("Marios Iordanous",imageMariosIordanous,0,20);
-    MichalisChatzipapa  = new Agents("Michalis Chatzipapa",imageMichalisChatzipapa,0,20);
+    MichalisChatzipapa  = new Agents("Michalis Chatzipapa",imageMichalisChatzipapa,0,21);
 
 }
 
@@ -116,6 +117,7 @@ function draw() {
     FrixosKatsampas.show(); FrixosKatsampas.move();
     AndreasChristodoulou.show(); AndreasChristodoulou.move();
     EleniSpyrou.show(); EleniSpyrou.move();
+    MariosIordanous.show(); MariosIordanous.move();
     MichalisChatzipapa.show(); MichalisChatzipapa.move();
    
     DimitrisGeorgiou.hoverAgent();
@@ -137,10 +139,12 @@ function draw() {
     FrixosKatsampas.hoverAgent();
     AndreasChristodoulou.hoverAgent();
     EleniSpyrou.hoverAgent();
+    MariosIordanous.hoverAgent();
     MichalisChatzipapa.hoverAgent();
 
 }
 function windowResized() {
   canvas = createCanvas(windowWidth,windowHeight); 
  }
+ 
  
