@@ -1,7 +1,7 @@
 class Agents{
     constructor(name,agentPicture,crossSales,y){
         this.name = name;
-        this.x =windowWidth * 0.05;
+        this.x =windowWidth * 0.015;
         this.crossSales = crossSales * windowWidth * 0.009 * 2;
         this.crossDisplay = crossSales;
         this.y = windowHeight * y / 25 + windowHeight * 0.05;
