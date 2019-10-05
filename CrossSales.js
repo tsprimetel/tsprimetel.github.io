@@ -69,7 +69,7 @@ function setup() {
     AntreasAnastasiou = new Agents("Antreas Anastasiou",imageAntreasAnastasiou,0,15);
     AntriaKyprianou = new Agents("Antria Kyprianou",imageAntriaKyprianou,2,8);
     EftychiaPhylactide  = new Agents("EftychiaPhylactide",imageEftychiaPhylactide,0,5);
-    FiliposKarayiannis  = new Agents("Filipos Karayiannis",imageFiliposKarayiannis,0,2);
+    FiliposKarayiannis  = new Agents("Filippos Karayiannis",imageFiliposKarayiannis,0,2);
     GeorgeCharalampous = new Agents("George Charalampous",imageGeorgeCharalampous,0,7);
     GeorgeChristodoulou = new Agents("George Christodoulou",imageGeorgeChristodoulou,0,4);
     GeorgeZafeiropoulos  = new Agents("George Zafeiropoulos",imageGeorgeZafeiropoulos,0,1);
