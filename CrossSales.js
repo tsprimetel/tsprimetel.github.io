@@ -1,5 +1,6 @@
 
 
+
 let imageMariosParaschou,MariosParaschou;
 let imageDimitrisGeorgiou,DimitrisGeorgiou;
 let imageAntreasAnastasiou,AntreasAnastasiou;
@@ -48,12 +49,12 @@ function preload() {
   imageMichalisSkoutaris   = loadImage('assets/imageMichalisSkoutaris.png');
   imagePanagiotaCharalampous  = loadImage('assets/imagePanagiotaCharalampous.png');
   imageSteliosAngeli = loadImage('assets/imageSteliosAngeli.png');
-  imageGeorgeLazari =  loadImage('assets/template.png');
-  imageFrixosKatsampas  =  loadImage('assets/template.png');
-  imageAndreasChristodoulou =  loadImage('assets/template.png');
-  imageEleniSpyrou =  loadImage('assets/template.png');
+  imageGeorgeLazari =  loadImage('assets/imageGeorgeLazari.png');
+  imageFrixosKatsampas  =  loadImage('assets/imageFrixosKatsampas.png');
+  imageAndreasChristodoulou =  loadImage('assets/imageAndreasChristodoulou.png');
+  imageEleniSpyrou =  loadImage('assets/imageEleniSpyrou.png');
   imageMariosIordanous =  loadImage('assets/template.png');
-  imageMichalisChatzipapa =  loadImage('assets/template.png');
+  imageMichalisChatzipapa =  loadImage('assets/imageMichalisChatzipapa.png');
 
   img = loadImage('assets/background.png');
   myFont = loadFont('assets/veteran.ttf');
@@ -146,5 +147,6 @@ function draw() {
 function windowResized() {
   canvas = createCanvas(windowWidth,windowHeight); 
  }
+ 
  
  
