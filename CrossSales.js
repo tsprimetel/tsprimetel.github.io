@@ -4,6 +4,12 @@
 
 
 
+
+
+
+
+
+
 let imageMariosParaschou,MariosParaschou;
 let imageDimitrisGeorgiou,DimitrisGeorgiou;
 let imageAntreasAnastasiou,AntreasAnastasiou;
@@ -88,6 +94,8 @@ function setup() {
     arr.push(new Agents("Eleni Spyrou",imageEleniSpyrou,0,19));
     arr.push(new Agents("Marios Iordanous",imageMariosIordanous,0,20));
     arr.push(new Agents("Michalis Chatzipapa",imageMichalisChatzipapa,0,21));
+    arr.push(new Agents("Giannos Ioannou",imageMariosIordanous,0,22));
+    arr.push(new Agents("Pavlos Setsidis",imageMariosIordanous,0,23));
 
 }
 
@@ -116,6 +124,13 @@ function windowResized() {
   canvas = createCanvas(windowWidth,windowHeight); 
  }
  
+ 
+ 
+
+ 
+ 
+ 
+
  
  
 
