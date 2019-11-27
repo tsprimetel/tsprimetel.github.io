@@ -77,25 +77,25 @@ function setup() {
     arr.push(new Agents("Marios Paraschou",imageMariosParaschou,0,6));
     arr.push(new Agents("Antreas Anastasiou",imageAntreasAnastasiou,0,15));
     arr.push(new Agents("Antria Kyprianou",imageAntriaKyprianou,0,8));
-    arr.push(new Agents("EftychiaPhylactide",imageEftychiaPhylactide,0,5));
+    arr.push(new Agents("EftychiaPhylactide",imageEftychiaPhylactide,1,5));
     arr.push(new Agents("Filippos Karayiannis",imageFiliposKarayiannis,0,2));
     arr.push(new Agents("George Charalampous",imageGeorgeCharalampous,0,7));
     arr.push(new Agents("George Christodoulou",imageGeorgeChristodoulou,0,4));
     arr.push(new Agents("George Zafeiropoulos",imageGeorgeZafeiropoulos,0,1));
-    arr.push(new Agents("Konstantinos Kosta",imageKonstantinosKosta,4,10));
+    arr.push(new Agents("Konstantinos Kosta",imageKonstantinosKosta,5,10));
     arr.push(new Agents("Konstantinos Tsitzilonis",imageKonstantinosTsitzilonis,0,11));
-    arr.push(new Agents("Michalis Kyprianou",imageMichalisKyprianou,0,12));
+    arr.push(new Agents("Michalis Kyprianou",imageMichalisKyprianou,2,12));
     arr.push(new Agents("Michalis Skoutaris",imageMichalisSkoutaris,0,13));
     arr.push(new Agents("Pani Charalampous",imagePanagiotaCharalampous,0,14));
     arr.push(new Agents("Stelios Angeli",imageSteliosAngeli,0,3));
     arr.push(new Agents("George Lazari",imageGeorgeLazari,0,16));
-    arr.push(new Agents("Frixos Katsampas",imageFrixosKatsampas,0,17));
+    arr.push(new Agents("Giannos Ioannou",imageMariosIordanous,0,17));
     arr.push(new Agents("Andreas Christodoulou",imageAndreasChristodoulou,0,18));
     arr.push(new Agents("Eleni Spyrou",imageEleniSpyrou,0,19));
-    arr.push(new Agents("Marios Iordanous",imageMariosIordanous,0,20));
+    arr.push(new Agents("Pavlos Setsidis",imageMariosIordanous,0,20));
     arr.push(new Agents("Michalis Chatzipapa",imageMichalisChatzipapa,0,21));
-    arr.push(new Agents("Giannos Ioannou",imageMariosIordanous,0,22));
-    arr.push(new Agents("Pavlos Setsidis",imageMariosIordanous,0,23));
+    
+    
 
 }
 
