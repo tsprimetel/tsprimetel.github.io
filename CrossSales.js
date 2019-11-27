@@ -86,14 +86,14 @@ function setup() {
     arr.push(new Agents("Konstantinos Tsitzilonis",imageKonstantinosTsitzilonis,0,11));
     arr.push(new Agents("Michalis Kyprianou",imageMichalisKyprianou,2,12));
     arr.push(new Agents("Michalis Skoutaris",imageMichalisSkoutaris,0,13));
-    arr.push(new Agents("Pani Charalampous",imagePanagiotaCharalampous,0,14));
+    arr.push(new Agents("Michalis Chatzipapa",imageMichalisChatzipapa,0,14));
     arr.push(new Agents("Stelios Angeli",imageSteliosAngeli,0,3));
     arr.push(new Agents("George Lazari",imageGeorgeLazari,0,16));
     arr.push(new Agents("Giannos Ioannou",imageMariosIordanous,0,17));
     arr.push(new Agents("Andreas Christodoulou",imageAndreasChristodoulou,0,18));
     arr.push(new Agents("Eleni Spyrou",imageEleniSpyrou,0,19));
     arr.push(new Agents("Pavlos Setsidis",imageMariosIordanous,0,20));
-    arr.push(new Agents("Michalis Chatzipapa",imageMichalisChatzipapa,0,21));
+    
     
     
 
