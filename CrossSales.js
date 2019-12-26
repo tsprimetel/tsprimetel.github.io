@@ -74,17 +74,17 @@ function setup() {
 
 
     arr.push(new Agents("Dimitris Georgiou",imageDimitrisGeorgiou,0,9));
-    arr.push(new Agents("Marios Paraschou",imageMariosParaschou,0,6));
+    arr.push(new Agents("Marios Paraschou",imageMariosParaschou,1,6));
     arr.push(new Agents("Antreas Anastasiou",imageAntreasAnastasiou,0,15));
-    arr.push(new Agents("Antria Kyprianou",imageAntriaKyprianou,0,8));
+    arr.push(new Agents("Antria Kyprianou",imageAntriaKyprianou,1,8));
     arr.push(new Agents("EftychiaPhylactide",imageEftychiaPhylactide,1,5));
     arr.push(new Agents("Filippos Karayiannis",imageFiliposKarayiannis,0,2));
     arr.push(new Agents("George Charalampous",imageGeorgeCharalampous,0,7));
     arr.push(new Agents("George Christodoulou",imageGeorgeChristodoulou,0,4));
     arr.push(new Agents("George Zafeiropoulos",imageGeorgeZafeiropoulos,0,1));
-    arr.push(new Agents("Konstantinos Kosta",imageKonstantinosKosta,5,10));
-    arr.push(new Agents("Konstantinos Tsitzilonis",imageKonstantinosTsitzilonis,0,11));
-    arr.push(new Agents("Michalis Kyprianou",imageMichalisKyprianou,2,12));
+    arr.push(new Agents("Konstantinos Kosta",imageKonstantinosKosta,6,10));
+    arr.push(new Agents("Konstantinos Tsitzilonis",imageKonstantinosTsitzilonis,2,11));
+    arr.push(new Agents("Michalis Kyprianou",imageMichalisKyprianou,3,12));
     arr.push(new Agents("Michalis Skoutaris",imageMichalisSkoutaris,0,13));
     arr.push(new Agents("Michalis Chatzipapa",imageMichalisChatzipapa,0,14));
     arr.push(new Agents("Stelios Angeli",imageSteliosAngeli,0,3));
